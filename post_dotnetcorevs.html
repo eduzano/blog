@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Blog for Southworks by Eduardo Zanotti</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/figure.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Index</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Sample Post</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/int-bg.png')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h2>MVC App with VS - .NET Core - Docker</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-8 col-md-10 mx-auto">
+            
+            <h2 class="section-heading">
+              In this part we are going to create a Model-View-Controller app with .NET Core, putting it into a container for future deploys
+              in other platforms.
+            </h2>
+            <hr>
+            <ol type="1">
+              <li>
+                <p>
+                  Open a Visual Studio and create a New Project.
+                </p>
+                <img class="img-fluid" src="img/netcore/mvcvs.png" alt="1">
+              </li>
+              <br>
+              <li>
+                <ol type="1">
+                  <li>
+                    Choose .NET Core.
+                  </li>
+                  <li>
+                    Choose "Web Application ASP.NET Core".
+                  </li>
+                  <li>
+                    Give a name to the project.
+                  </li>
+                </ol>
+                <img class="img-fluid" src="img/netcore/mvcvs2.png" alt="1">
+              </li>
+              <li>
+                <ol type="1">
+                  <li>
+                    <p>
+                      Choose Web Application.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Check Docker compatibility
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      For this example we won't use authentication, but there you can choose between distinct auth types!
+                    </p>
+                  </li>
+                </ol>
+                <img class="img-fluid" src="img/netcore/mvcvs3.png" alt="1">
+              </li>
+              <blockquote class="blockquote">
+                <p>
+                  In OS, you can choose what OS Docker will support in the container. For this example is Windows.
+                </p>    
+              </blockquote>
+              <li>
+                <p>
+                  Click accept and create the project.
+                </p>
+                <img class="img-fluid" src="img/netcore/mvcvs4.png" alt="1">
+              </li>
+              <li>
+                <p>
+                  Click Play, this will compile and run your MVC app in the docker container.
+                </p>
+                <img class="img-fluid" src="img/netcore/mvcvs5.png" alt="1">
+              </li>
+              <li>
+                <p>
+                  After clicking run, Visual Studio will compile the solution and open a new browser tab with a page.
+                </p>
+                <p>
+                  That page is the default web of the MVC project that we created, you will find there links to tutorials, news, etc.
+                </p>
+                <img class="img-fluid" src="img/netcore/mvcvs6.png" alt="1">
+                <blockquote class="blockquote">
+                    <p>
+                      If we check the containers that our Docker have..
+                    </p>
+                    <img class="img-fluid" src="img/netcore/mvcvs7.png" alt="1">
+                  </blockquote>
+              </li>
+            </ol>
+            <hr>
+            <hr>
+
+            <h5 class="section-heading">
+                Following this steps made you have your own MVC application inside a container of Docker, you can export this image,
+                import in another Docker, modify with your own code, create a new one, etc.
+                Thanks for reading this post, hope it helps you!
+            </h5>
+
+            <br>
+            <!-- GO TO POST -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center" >
+                  <li class="page-item" ><a class="page-link" href="post_docker.html"> < Previous Page (.NET Core)</a></li>
+                  <li class="page-item" ><a class="page-link" href="index.html">Go to Index ></a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/eduzano">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Eduardo Zanotti</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Blog for Southworks by Eduardo Zanotti</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/console.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Index</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="post_introduction.html">Introduction</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="post_docker.html">Guide</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/int-bg.png')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>.NET? .NET Core? Docker?</h1>
+              <h2 class="subheading">Take a look to this post</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-8 col-md-10 mx-auto">
+
+            <!-- .NET -->
+            <h2 class="section-heading">Introduction to .NET</h2>
+
+            <img class="img-fluid" src="img/net_top-650x300.png" alt=".Net">
+
+            <p>.NET is a free, cross-platform, open source developer platform for building many different types of applications from Microsoft.
+                With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, gaming, and IoT.
+            </p>
+            <p>The .NET Framework has been developed to cater to the following objectives and requirements:</p>
+            <ul>
+                <li>To provide a consistent object-oriented environment to develop applications.</li>
+                <li>To provide a code execution environment that simplifies deployment and versioning.</li>
+                <li>To provide a code execution environment that guarantees the safety of the code that is executing. This includes both code developed internally by an organization or for code developed by 3rd party vendors.</li>
+                <li>To provide a code execution environment that eliminates the issues faced by scripted environments with respect to performance.</li>
+                <li>To provide a common programming model where the choice of a programming language becomes a matter of choice.</li>
+            </ul>
+            <br>
+            <hr>
+
+            <blockquote class="blockquote">
+                <p>
+                  Here is a quick guide from Microsoft about how to install and build your first console application!
+                  <a href="https://www.microsoft.com/net/learn/get-started/windows">Click here!</a>
+                </p>
+                If you want to know more about .NET i recommend you to read this articles:
+                <ul>
+                    <li>From Microsoft: <a href="https://www.microsoft.com/net/learn/what-is-dotnet">What is dotnet?</a></li>
+                    <li>From CodeProject: <a href="https://www.codeproject.com/Articles/3992/What-is-NET">What is NET?</a></li>
+                </ul>
+            </blockquote>
+
+            <!-- End .NET -->
+            
+            <hr>
+
+            <!-- .NET CORE -->
+            <h2 class="section-heading">Introduction to .NET Core</h2>
+
+            <img class="img-fluid" src="img/netcore.png" alt=".Net">
+            <p>
+                .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on <a href="https://github.com/dotnet/core">GitHub</a>. It is cross-platform,
+                supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
+            </p>
+            <p>
+                The following characteristics best define .NET Core:
+            </p>
+            <ul>
+                <li><b>Flexible deployment</b>: Can be included in your app or installed side-by-side user- or machine-wide.</li>
+                <li><b>Cross-platform</b>: Runs on Windows, macOS and Linux; can be ported to other OSes. The supported Operating Systems (OS), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.</li>
+                <li><b>Command-line tools</b>: All product scenarios can be exercised at the command-line.</li>
+                <li><b>Compatible</b>: .NET Core is compatible with .NET Framework, Xamarin and Mono, via the .NET Standard Library.</li>
+                <li><b>Open source</b>: The .NET Core platform is open source, using MIT an Apache 2 licenses. Documentation is licensed under CC-BY. .NET Core is a .NET Foundation project.</li>
+                <li><b>Supported by Microsoft</b>: .NET Core is supported by Microsoft, per .NET Core Support</li>
+            </ul>
+            <br>
+            <hr>
+            <blockquote class="blockquote">
+                <p>
+                  So.. if i want to start to develop a project.. Wich of them is the choosen one..?
+                </p>
+                <p>
+                  Well.. you will choose <b>.NET Core</b> when your application in server side are going to be cross-platform, targeting microservices,
+                  using <b>Docker</b> containers (keep reading to know what is <b>Docker</b>!) or when you need a high-performance and scalable systems.
+                </p>
+                <p>
+                  And you are going to use .NET when you currently hace a .NET app running, when you have to use some packages that are not available yet
+                  in .NET Core, or you are using a platform that doesn't support .NET Core.
+                </p>
+                <p>
+                  Want to read more about <b>.NET Core?</b>: <a href="https://docs.microsoft.com/en-us/dotnet/core/get-started">Click here!</a>
+                </p>
+            </blockquote>
+            
+            <!-- END .NET CORE -->
+
+            <hr>
+
+            <!-- DOCKER -->
+
+            <h2 class="section-heading">Docker</h2>
+
+            <img class="img-fluid" src="img/docker.png" alt=".Net">
+            <p>
+              <a href="https://www.docker.com/">Docker</a> is a platform that allows you to create portable and lightweight container to build,
+              deploy, and run your applications. It can be installed in almost every SO.
+              <b>Docker</b> is a bit like a virtual machine. But unlike a virtual machine, rather than creating a whole virtual operating system, 
+              <b>Docker</b> allows applications to use the same kernel as the system that they're running on and only requires applications 
+              be shipped with things not already running on the host computer. 
+            </p>
+            <p>
+                Benefits of using <b>Docker</b>:
+            </p>
+            <ul>
+                <li><b>Reproducibility</b>: The exact specifications of a container are stored in a Dockerfile. By distributing this file among team members, an organization can guarantee that all images built from the same Dockerfile will function identically.</li>
+                <li><b>Isolation</b>: Dependencies or settings within a container will not affect any installations or configurations on your computer, or on any other containers that may be running.</li>
+                <li><b>Security</b>: Separating the different components of a large application into different containers can have security benefits: if one container is compromised the others remain unaffected.</li>
+                <li><b>Compatible</b>: .NET Core is compatible with .NET Framework, Xamarin and Mono, via the .NET Standard Library.</li>
+                <li><b>Environment Management</b>: You can have a separate container for testing, development, and production on the same Linode and easily deploy to each one.</li>
+                <li><b>Open Source</b></li>
+            </ul>
+            <br>
+            <hr>
+            <blockquote class="blockquote">
+              <p>
+                <b>Docker</b> have two options for using the tool, one is the 
+                <a href="https://www.docker.com/community-edition">COMMUNITY EDITION</a> and the other is 
+                <a href="https://www.docker.com/enterprise-edition">ENTERPRISE EDITION</a>. First is for small teams or people who wants
+                to get started with the tool and buil their own container apps, the enterprise edition have more features than the community,
+                like private support channels, certifieds, monitoring, more OS supported, etc.
+              </p>
+              <p>
+                More information about <b>Docker</b> <a href="https://www.docker.com/what-docker">Here!</a>
+              </p>
+              <hr>
+            </blockquote>
+
+            <!-- END DOCKER -->
+
+            <!-- GO TO POST -->
+
+            <h5 class="section-heading">
+              With all the concepts that you had read here, you are able to continue with the step by step guide
+              <a href="post_docker.html">click here to start!</a>
+            </h5>
+            <br>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/eduzano">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Eduardo Zanotti</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
