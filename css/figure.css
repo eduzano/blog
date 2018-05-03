@@ -1,0 +1,29 @@
+figure {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #eee;
+}
+
+figure figcaption {
+    display: block;
+    padding: 5px 10px 4px 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    background: #ddd;
+    color: #777;
+}
+
+pre {
+    padding: 10px;
+    font-size: 0.8em;
+}
+pre, pre code, pre samp {
+    display: block;
+    margin: 0;
+    cursor: text;
+    font: normal normal normal 1em/1.4 monaco, courier, monospace;
+        font-size: 1em;
+}
